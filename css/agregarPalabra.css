@@ -1,0 +1,158 @@
+.agregarPalabra{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+form{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px 15px 0 70px;
+    font-size: 32px;
+    line-height: 48px;
+    color: #0A3871;
+    background-color: transparent;
+    resize: none;
+    border: none;
+    font-family: "Inter",sans-serif;
+    outline: none;
+}
+
+.btns-agragarPalabra{
+    text-align: center;
+}
+
+.alerta{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #495057;
+    opacity: .8;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#btn-agregar, #btn-cancelar{
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    color: #d5d5d5;
+    background: linear-gradient( #1b5681,#083060, #020b29);
+    border: none;
+    border-radius: 24px;
+    margin: 0 5px 10px;
+}
+
+#btn-cancelar{
+    color: #d5d5d5;
+    text-decoration: none;    
+}
+
+#btn-agregar:hover, #btn-cancelar:hover{
+    cursor: pointer;
+    background:#082d5b;
+}
+
+#btn-agregar:active, #btn-cancelar:active{
+    cursor: pointer;
+    background:#062347;
+}
+
+/*Cartel de Palabra Agregada*/
+.agregada{
+    display: none;
+    background: #7788a0;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px 2px #051343;
+    min-width: 300px;
+    max-width: 600px;
+    width: 80%;
+    height: 40%;
+    position: fixed;
+    border-radius: 50px;
+    top: 140px;
+    text-transform: uppercase;
+}
+
+.agregada h3{
+    font-size: 2rem;
+    margin:auto;
+}
+
+.agregada button{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    margin: 10px auto;
+    height: 25px;
+    width: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    background:linear-gradient( #1b5681,#083060, #051343);
+    border: none;
+    border-radius:25px;
+}
+
+.agregada button:hover{
+    cursor: pointer;
+    background:#082d5b;
+}
+
+.agregada button:active{
+    cursor: pointer;
+    background:#062347;
+}
+
+/*Cartel de ya Existe*/
+.existe{
+    display: none;
+    background: #a07777;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px 2px #051343;
+    min-width: 300px;
+    max-width: 600px;
+    width: 80%;
+    height: 40%;
+    position: fixed;
+    border-radius: 50px;
+    top: 140px;
+    text-transform: uppercase;
+}
+
+.existe h3{
+    padding: 12px;
+    font-size: 2rem;
+    margin:auto;
+}
+
+.existe button{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    margin: 10px auto;
+    height: 25px;
+    width: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    background:linear-gradient( #1b5681,#083060, #051343);
+    border: none;
+    border-radius:25px;
+}
+
+.existe button:hover{
+    cursor: pointer;
+    background:#082d5b;
+}
+
+.existe button:active{
+    cursor: pointer;
+    background:#062347;
+}

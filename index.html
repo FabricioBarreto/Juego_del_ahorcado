@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/juego.css">
+    <link rel="stylesheet" href="./css/agregarPalabra.css">
+    <!--Icons Moons-->
+    <link rel="stylesheet" href="icons/style.css">
+    <title>Ahorcado</title>
+</head>
+<body>
+    <div class="container">
+        <header>  
+            <h1 class="brand">Ahorcado</h1>  
+        </header>
+        <main>
+            <section>
+                <!--Inicio-->
+                <article class="inicio" id="inicio">
+                    <div class="btns-inicio">
+                        <button id="btn-iniciarJuego">Iniciar Juego</button>
+                        <button id="btn-agregarPalabra">Agregar Palabra</button>
+                    </div>
+                </article>
+                 <!--Juego-->
+                 <article class="juego"  id="juego">
+                    <div class="muñeco">
+                        <canvas width="400" height="300"></canvas>
+                    </div>
+                    <div class="areaDePalabra">
+                    </div>
+                    <div class="letras-utilizadas">
+                    </div>
+                    <div class="btns-juego">
+                        <button id="btn-cambiarPalabra">Cambiar Palabra</button>
+                        <button id="btn-rendirse">Rendirse</button>
+                    </div>
+                    <!--Cartel de Ganaste-->
+                    <div class="ganaste">
+                        <h3>¡Ganaste!</h3>
+                        <button class="btn-ok-ganaste">OK</button>
+                    </div>
+                    <!--Cartel de Perdiste-->
+                    <div class="perdiste">
+                        <h3>Perdiste</h3>
+                        <p>La palabra era <b class="mostrarPalabra"></b></p>
+                        <button class="btn-ok-perdiste">OK</button>
+                    </div>
+                </article>
+                 <!--Agregar Palabras-->
+                 <article class="agregarPalabra"  id="agregarPalabra">
+                    <form>
+                        <textarea placeholder="Agregar nueva palabra" id="txtAgregar" cols="20" rows="7"></textarea>
+                        <div class="btns-agregarPalabras">
+                            <p class="alerta"><img src="img/alert.png" alt="alert"> Maximo 12 caracteres, sin acentos ni espacios</p>
+                            <button id="btn-cancelar">Volver</button>
+                            <button id="btn-agregar">Agregar</button>
+                        </div>
+                    </form>
+                       <!--Cartel de Palabra Agregada-->
+                       <div class="agregada">
+                        <h3>Palabra agregada correctamente</h3>
+                        <button class="btn-ok-agregada">OK</button>
+                    </div>
+                      <!--Cartel de ya existe-->
+                      <div class="existe">
+                        <h3>La palabra ya existe en la lista de palabras</h3>
+                        <button class="btn-ok-existe">OK</button>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <p>©2022 Desarrollado por <b>Fabricio Barreto</b>.</p><br>
+                <ul class="redes">
+                    <li><a href="https://www.linkedin.com/in/fabricio-barreto-9082b0187/" target="_blank" class="icon icon-linkedin"></a></li>
+                    <li><a href="https://github.com/fabrib26" target="_blank" class="icon icon-github"></a></li>
+                    <li><a href="https://www.facebook.com/fabri.barreto/" target="_blank" class="icon icon-facebook"></a></li>
+                    <li><a href="https://www.instagram.com/fabrib_26/" target="_blank" class="icon icon-instagram"></a></li>
+                </ul>
+            </section>
+        </footer>
+    </div>
+    <script src="/js/juego.js"></script>
+</body>
+</html>

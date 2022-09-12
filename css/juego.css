@@ -1,0 +1,175 @@
+.juego{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    transition:all 1s;
+}
+
+/* Area del muñeco */
+
+.muñeco{
+    margin: auto;
+}
+
+/* Area de la palabra */
+
+.areaDePalabra{
+    display: flex;
+    height: 65px;
+}
+
+.linea{
+    text-transform: uppercase;
+    font-size:40px;
+    color:#00132b;
+    text-transform: uppercase;
+    font-size:40px;
+    display: block;
+    margin: 10px 5px;
+    width: 40px;
+    border-bottom: 5px solid #082d5b;
+}
+
+/* Area de las letras utilizadas */
+
+.letras-utilizadas{
+    overflow: hidden;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 40px;
+    color:#082d5b;
+    height: 40px;
+}
+
+.utilizada{
+    margin: 0 5px;
+}
+
+/* Area de botones */
+
+.btns-juego {
+    margin: 10px 0 5px;
+} 
+
+#btn-rendirse{
+    color: #d5d5d5;
+    text-decoration: none;
+}
+
+#btn-cambiarPalabra ,#btn-rendirse{
+    color: #d5d5d5;
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    background:linear-gradient( #1b5681,#083060, #051343);
+    border: none;
+    border-radius:25px;
+    margin: 5px 0;
+}
+
+#btn-cambiarPalabra:hover ,#btn-rendirse:hover{
+    cursor: pointer;
+    background:#082d5b;
+}
+
+#btn-cambiarPalabra:active ,#btn-rendirse:active{
+    cursor: pointer;
+    background:#062347;
+}
+/*Cartel de Ganaste*/
+.ganaste{
+    display: none;
+    background: #7788a0;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px 2px #051343;
+    min-width: 300px;
+    max-width: 600px;
+    width: 80%;
+    height: 40%;
+    position: fixed;
+    border-radius: 50px;
+    top: 140px;
+    text-transform: uppercase;
+}
+
+.ganaste h3{
+    font-size: 2rem;
+    margin:auto;
+}
+
+.ganaste button{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    margin: 10px auto;
+    height: 25px;
+    width: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    background:linear-gradient( #1b5681,#083060, #051343);
+    border: none;
+    border-radius:25px;
+}
+
+.ganaste button:hover{
+    cursor: pointer;
+    background:#082d5b;
+}
+
+.ganaste button:active{
+    cursor: pointer;
+    background:#062347;
+}
+/*Cartel de Perdiste*/
+.perdiste{
+    background: #a07777;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px 2px #051343;
+    min-width: 300px;
+    max-width: 600px;
+    width: 80%;
+    height: 40%;
+    position: fixed;
+    border-radius: 50px;
+    top: 140px;
+    text-transform: uppercase;
+}
+
+.perdiste h3{
+    font-size: 2rem;
+    margin: 40px auto 2px;
+}
+
+.perdiste b{
+    color: #9e0000;
+    font-size: 20px;
+}
+
+.perdiste button{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    margin: 10px auto;
+    height: 25px;
+    width: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    background:linear-gradient( #1b5681,#083060, #051343);
+    border: none;
+    border-radius:25px;
+}
+
+.perdiste button:hover{
+    cursor: pointer;
+    background:#082d5b;
+}
+
+.perdiste button:active{
+    cursor: pointer;
+    background:#062347;
+}
