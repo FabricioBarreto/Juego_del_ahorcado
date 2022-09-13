@@ -1,0 +1,68 @@
+.inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+}
+
+.btns-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn-iniciarJuego{
+    background: #0a3871;
+    height: 90px;
+    width: 300px;
+    border: none;
+    border-radius: 24px;
+    margin: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#btn-iniciarJuego{
+    color: #E5E5E5 ;
+    text-decoration: none;
+}
+
+#btn-iniciarJuego:hover{
+    cursor: pointer;
+    background:#082d5b;
+}
+
+#btn-iniciarJuego:active{
+    background: #062347;
+}
+
+#btn-agregarPalabra{
+    background: #E5E5E5;
+    border: 1px solid #0A3871;
+    height: 60px;
+    width: 300px;
+    border-radius: 24px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+#btn-agregarPalabra{
+    text-decoration: none;
+    color: #0A3871;
+}
+
+#btn-agregarPalabra:hover{
+    cursor: pointer;
+    background: #d5d5d5;
+}
+
+#btn-agregarPalabra:active{
+    background:#bdbdbd;
+}
